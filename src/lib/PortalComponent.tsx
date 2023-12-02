@@ -109,7 +109,7 @@ const PortalComponent = forwardRef<HTMLDivElement, PropsType>(
       onExited,
       onCloseRequested,
       onEntering,
-      container = document.body,
+      container = typeof window !== "undefined" ? window.document.body : undefined,
       ...divProps
     } = props;
     const internalRef = useRef<HTMLDivElement | null>(null);
@@ -180,6 +180,10 @@ const PortalComponent = forwardRef<HTMLDivElement, PropsType>(
         onCloseRequested && onCloseRequested();
       }
     }, [open, status, onCloseRequested, onEntering]);
+
+    if (!container) {
+      return null;
+    }
 
     if (status === "NOT_MOUNT") {
       return null;
