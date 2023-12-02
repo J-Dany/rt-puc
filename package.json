@@ -1,7 +1,7 @@
 {
   "name": "rt-puc",
   "description": "React Transition Portal-based UI Components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "license": "MIT",
   "packageManager": "yarn@4.0.2",
