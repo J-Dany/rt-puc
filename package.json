@@ -8,6 +8,10 @@
   "main": "./dist/rt-puc.umd.js",
   "module": "./dist/rt-puc.es.js",
   "types": "./dist/rt-puc.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/J-Dany/rt-puc.git"
+  },
   "exports": {
     ".": {
       "import": "./dist/rt-puc.es.js"
@@ -16,6 +20,15 @@
       "import": "./dist/rt-puc-utils.es.js"
     }
   },
+  "keywords": [
+    "react",
+    "transition",
+    "addons",
+    "transition-group",
+    "animation",
+    "css",
+    "transitions"
+  ],
   "files": [
     "dist"
   ],
