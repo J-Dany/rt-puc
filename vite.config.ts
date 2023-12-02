@@ -12,16 +12,26 @@ const filesPathToExclude = filesNeedToExclude.map((src) => {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), dts({ insertTypesEntry: true, include: ["src/lib/*.(ts|tsx)", "src/utils.ts"] })],
+  plugins: [
+    react(),
+    dts({
+      insertTypesEntry: true,
+      rollupTypes: true,
+      include: ["src/lib/*.(ts|tsx)", "src/utils.ts"],
+    }),
+  ],
   build: {
     sourcemap: true,
     lib: {
-      entry: [path.resolve(__dirname, "src/lib/index.ts"), path.resolve(__dirname, "src/utils.ts")],
+      entry: [
+        path.resolve(__dirname, "src/lib/index.ts"),
+        path.resolve(__dirname, "src/utils.ts"),
+      ],
       name: "rt-puc",
       formats: ["es"],
       fileName: (format, entryName) => {
         if (entryName === "utils") {
-          return `rt-puc-utils.${format}.js`
+          return `rt-puc-utils.${format}.js`;
         }
 
         return `rt-puc.${format}.js`;
