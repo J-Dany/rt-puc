@@ -1,6 +1,9 @@
 # RT-PUC (React Transition Portal-based UI Components)
 
 ![npm](https://img.shields.io/npm/v/rt-puc)
+![npm bundle size](https://img.shields.io/bundlephobia/min/rt-puc)
+![GitHub Repo stars](https://img.shields.io/github/stars/J-Dany/rt-puc)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/J-Dany/rt-puc/main)
 
 ## Table of Contents
 
