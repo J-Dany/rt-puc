@@ -1,0 +1,6 @@
+node_modules
+.storybook
+.yarn
+stories
+__tests__
+.husky
