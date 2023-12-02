@@ -1,21 +1,22 @@
 {
   "name": "rt-puc",
   "description": "React Transition Portal-based UI Components",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "license": "MIT",
   "packageManager": "yarn@4.0.2",
   "module": "./dist/rt-puc.es.js",
-  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/J-Dany/rt-puc.git"
   },
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/rt-puc.es.js"
     },
     "./utils": {
+      "types": "./dist/utils.d.ts",
       "import": "./dist/rt-puc-utils.es.js"
     }
   },

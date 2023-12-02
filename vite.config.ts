@@ -16,7 +16,6 @@ export default defineConfig({
     react(),
     dts({
       insertTypesEntry: true,
-      rollupTypes: true,
       include: ["src/lib/*.(ts|tsx)", "src/utils.ts"],
     }),
   ],
