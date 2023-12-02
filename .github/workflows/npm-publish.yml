@@ -15,13 +15,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - uses: actions/upload-artifact@v3
-        with:
-          name: dist
-          path: ./dist
       - run: yarn install
       - run: yarn run test
       - run: yarn run build
+      - uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist
 
   publish-npm:
     needs: build
