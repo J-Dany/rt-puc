@@ -7,7 +7,7 @@
   "packageManager": "yarn@4.0.2",
   "main": "./dist/rt-puc.umd.js",
   "module": "./dist/rt-puc.es.js",
-  "types": "./dist/rt-puc.d.ts",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/J-Dany/rt-puc.git"
