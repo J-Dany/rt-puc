@@ -35,7 +35,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: dist
-          path: ./dist
+          path: dist
       - run: yarn install
       - run: npm publish
         env:
