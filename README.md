@@ -11,8 +11,10 @@
 - [Overview](#overview)
   - [Lifecycle](#lifecycle)
   - [PortalComponent](#portalcomponent)
-  - [Modal component](#modal)
   - [Notification component](#notification)
+  - [Modal component](#modal)
+  - [Utils](#utils)
+- [See the library in action](#see-the-library-in-action)
 - [License](#license)
 - [Contacts](#contacts)
 
@@ -135,7 +137,7 @@ Note: the content of the notification can be either a React node or a function r
 
 ```tsx
 import { useState } from "react";
-import { Notification } from "rpuc";
+import { Notification } from "rt-puc";
 
 export default function App() {
   const [showNotification, setShowNotification] = useState(false);
@@ -195,7 +197,7 @@ Note: the content of the modal can be either a React node or a function returnin
 
 ```tsx
 import { useState } from "react";
-import { Modal } from "rpuc";
+import { Modal } from "rt-puc";
 
 export default function App() {
   const [showModal, setShowModal] = useState(false);
@@ -217,6 +219,25 @@ export default function App() {
     </>
   );
 }
+```
+
+### Utils
+
+```tsx
+import { 
+  makeModalDefaultStyleWithAnimation,
+  makeModalDefaultStyleWithTransition,
+  makeNotificationDefaultStyleWithTransition,
+} from "rt-puc/utils";
+```
+
+## See the library in action
+
+Clone the [repository](https://github.com/J-Dany/rt-puc), and run:
+
+```bash
+yarn install
+yarn run storybook
 ```
 
 ## License
